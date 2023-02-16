@@ -1,12 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>Hello World</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christopher Marsh</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/cb77397249.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section id="about">
+      <nav>
+        <div class="personal__logo">Chris Marsh</div>
+        <ul class="nav__link--list">
+          <li class="nav__link">
+            <a href="#projects" class="nav__link--item">Projects</a>
+          </li>
+          <li class="nav__link">
+            <a href="#languages" class="nav__link--item">Languages</a>
+          </li>
+          <li class="nav__link">
+            <a href="#contact" class="nav__link--item">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="about__me--container">
+        <div class="about__me">
+          <div class="about__me-row">
+            <div class="about__me--info-container">
+              <figure class="personal__picture--container">
+                <img
+                  src="images/personal-picture.jpg"
+                  alt="Picture of Chris M"
+                  class="personal__picture"
+                />
+              </figure>
+              <h1 class="about__me--header">
+                Hi! I'm <span class="coloured__text">Chris Marsh</span>
+              </h1>
+              <p class="about__me--text">
+                I'm a student at the
+                <span class="coloured__text">Institute of Data</span> studying
+                <span class="coloured__text">Software Engineering</span>. I'm
+                looking to improve my skills in Web Development and leverage my
+                abilities from this course to get a job and create wonderful
+                user experiences.
+              </p>
+              <div class="about__me--links">
+                <a href="https://github.com/cjm97"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-solid fa-envelope"></i></a>
+                <a href=""><i class="fa-solid fa-file-signature"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="projects__container">
+        <div class="projects">
+          <figure class="project1__wrapper">
+            <a href="https://cjm97.github.io/DiceGenerator/" target="_blank"
+              ><img
+                src="images/dicegeneratorproject.png"
+                class="project1"
+                alt=""
+            /></a>
+          </figure>
+          <figure class="project2__wrapper">
+            <a href="https://cjm97.github.io/RPS/" target="_blank"
+              ><img src="images/topsrpsproject.png" class="project2" alt=""
+            /></a>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section id="languages">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            These are the <span class="coloured__text">languages</span> I'm
+            using
+          </h1>
+          <div class="language__list">
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src="images/javascriptlogo.svg" class="language__img" alt="javascript" />
+              </figure>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src="images/csslogo.webp" class="language__img" alt="css" />
+              </figure>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src="images/htmllogo.png" class="language__img" alt="html5" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="contact">
+        <div class="footer__logo">
+            <h1>Chris Marsh</h1>
+        </div>
+        <ul class="footer__links">
+            <li class="footer__link">Github</li>
+            <li class="footer__link">LinkedIn</li>
+            <li class="footer__link">Email</li>
+            <li class="footer__link">Resume</li>
+        </ul>
+        <p>Copyright &#169 2023</p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
 </html>
