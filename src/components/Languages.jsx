@@ -2,7 +2,7 @@ import { Card, CardMedia, Grid, Paper, Typography, Box } from '@mui/material';
 import React from 'react';
 
 const technologies = [
-  { itemName: 'JavaScript', image: '/public/javascriptlogo.png' },
+  { itemName: 'JavaScript', image: 'javascriptlogo.png' },
   { itemName: 'HTML', image: 'htmllogo.png' },
   { itemName: 'CSS', image: 'csslogo.webp' },
   { itemName: 'React', image: 'React-icon.svg' },
