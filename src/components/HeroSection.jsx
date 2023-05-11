@@ -42,7 +42,7 @@ export default function HeroSection() {
             foundation in providing leadership across high pressure work
             environments in the healthcare sector. Dedicated to supporting team
             members and stakeholders in the fast-paced world of Software
-            Engineering.
+            Engineering. I am eager to continue my professional development and start using the knowledge I've acquired from the Institute of Data.
           </Typography>
         </Box>
         <Box sx={{display:'flex', justifyContent:'center', pt:'1rem'}}>
@@ -61,7 +61,7 @@ export default function HeroSection() {
               <LinkedInIcon color='secondary' />
             </a>
             <a
-              href='public/RESUME.pdf'
+              href='/RESUME.pdf'
               target='_blank
           '
             >

@@ -10,26 +10,29 @@ import { Box, Grid, Paper } from '@mui/material';
 const projectItems = [
   {
     projectName: 'Dice Generator',
-    image: '/public/dicegeneratorproject.png',
+    image: '/dicegeneratorproject.png',
     description:
       'Simple JavaScript based exercise for generating a random number on a particular dice. Dices range from d4 to a d20.',
+    link: 'https://cjm97.github.io/DiceGenerator/',
   },
   {
     projectName: 'Library',
-    image: '/public/Library.io.png',
+    image: '/Library.io.png',
     description:
       'Institute of Data Capstone project. Fullstack Web Application to track and review books. Made with React, Node.js, Express & MySQL.',
+    link: 'https://github.com/cjm97/library.io',
   },
   {
     projectName: 'Rock Paper Scissors',
-    image: '/public/topsrpsproject.png',
+    image: '/topsrpsproject.png',
     description:
       "Rock, paper, scissors JavaScript project made as part of the fundamental's section of 'The Odin Project' course.",
+    link: 'https://cjm97.github.io/RPS/',
   },
 ];
 export default function Projects() {
   return (
-    <Paper sx={{ padding: '2rem' }} id="projects">
+    <Paper sx={{ padding: '2rem' }} id='projects'>
       <Box textAlign={'center'}>
         <Typography variant='h5' py={'2rem'} display={'inline-block'}>
           These are some of my
@@ -38,7 +41,12 @@ export default function Projects() {
           projects.
         </Typography>
       </Box>
-      <Grid container spacing={2} justifyContent={'center'} alignItems={'center'}>
+      <Grid
+        container
+        spacing={2}
+        justifyContent={'center'}
+        alignItems={'center'}
+      >
         {projectItems.map((project) => (
           <Grid item xs={8} sm={6} md={4} key={project.projectName}>
             <Card variant='outlined' sx={{ maxWidth: 345 }}>
@@ -57,7 +65,9 @@ export default function Projects() {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size='small'>View Project</Button>
+                <Button size='small' href={project.link} target='_blank'>
+                  View Project
+                </Button>
               </CardActions>
             </Card>
           </Grid>

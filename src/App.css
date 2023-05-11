@@ -14,3 +14,8 @@ html {
 .language_img:hover {
     transform: scale(1.1);
 }
+
+.burger__menu--link {
+ text-decoration: none;
+ color: inherit;
+}

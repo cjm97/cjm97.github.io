@@ -90,8 +90,18 @@ function ResponsiveAppBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign='center'>{page}</Typography>
+                <MenuItem key={page} onClick={handleCloseNavMenu} >
+                  <a
+                    href={
+                      page === 'Contact'
+                        ? 'https://www.linkedin.com/in/christopher-marsh-b512b3199/'
+                        : `#${page.toLowerCase()}`
+                    }
+                    target={page === 'Contact' ? '_blank' : '_self'}
+                    className="burger__menu--link"
+                  >
+                    <Typography textAlign='center' >{page}</Typography>
+                  </a>
                 </MenuItem>
               ))}
             </Menu>
@@ -134,6 +144,7 @@ function ResponsiveAppBar() {
                     ? 'https://www.linkedin.com/in/christopher-marsh-b512b3199/'
                     : `#${page.toLowerCase()}`
                 }
+                target={page === 'Contact' ? '_blank' : '_self'}
               >
                 {page}
               </Button>
