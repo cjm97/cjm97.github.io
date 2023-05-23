@@ -42,10 +42,11 @@ export default function HeroSection() {
             foundation in providing leadership across high pressure work
             environments in the healthcare sector. Dedicated to supporting team
             members and stakeholders in the fast-paced world of Software
-            Engineering. I am eager to continue my professional development and start using the knowledge I've acquired from the Institute of Data.
+            Engineering. I am eager to continue my professional development and
+            start using the knowledge I've acquired from the Institute of Data.
           </Typography>
         </Box>
-        <Box sx={{display:'flex', justifyContent:'center', pt:'1rem'}}>
+        <Box sx={{ display: 'flex', justifyContent: 'center', pt: '1rem' }}>
           <Stack
             direction='row'
             spacing={2}
@@ -54,10 +55,7 @@ export default function HeroSection() {
             <a href='https://github.com/cjm97' target='_blank'>
               <GitHubIcon color='secondary' />
             </a>
-            <a
-              href='https://www.linkedin.com/in/christophermarsh4/'
-              target='_blank'
-            >
+            <a href='https://www.linkedin.com/in/chrismarsh44/' target='_blank'>
               <LinkedInIcon color='secondary' />
             </a>
             <a
