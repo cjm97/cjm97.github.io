@@ -55,7 +55,7 @@ export default function HeroSection() {
               <GitHubIcon color='secondary' />
             </a>
             <a
-              href='https://www.linkedin.com/in/christopher-marsh-b512b3199/'
+              href='https://www.linkedin.com/in/christophermarsh4/'
               target='_blank'
             >
               <LinkedInIcon color='secondary' />
