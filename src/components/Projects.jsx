@@ -9,25 +9,28 @@ import { Box, Grid, Paper } from '@mui/material';
 
 const projectItems = [
   {
-    projectName: 'Dice Generator',
-    image: '/dicegeneratorproject.png',
+    projectName: 'To Do List',
+    image: '/todolist.png',
     description:
-      'Simple JavaScript based exercise for generating a random number on a particular dice. Dices range from d4 to a d20.',
-    link: 'https://cjm97.github.io/DiceGenerator/',
+      "HTML, CSS and JavaScript project utilising the Web Storage API to create lists that contain 'To Do' tasks.",
+    liveLink: 'https://cjm97.github.io/TOP-Todo/',
+    repoLink: 'https://github.com/cjm97/TOP-Todo',
   },
   {
     projectName: 'Library',
     image: '/Library.io.png',
     description:
       'Institute of Data Capstone project. Fullstack Web Application to track and review books. Made with React, Node.js, Express & MySQL.',
-    link: 'https://github.com/cjm97/library.io',
+    liveLink: null,
+    repoLink: 'https://github.com/cjm97/library.io',
   },
   {
-    projectName: 'Rock Paper Scissors',
-    image: '/topsrpsproject.png',
+    projectName: 'Tic Tac Toe',
+    image: '/Tic-Tac-Toe.png',
     description:
-      "Rock, paper, scissors JavaScript project made as part of the fundamental's section of 'The Odin Project' course.",
-    link: 'https://cjm97.github.io/RPS/',
+      "Tic-Tac-Toe game application made with HTML, CSS and JS as part of 'The Odin Project' course.",
+    liveLink: 'https://cjm97.github.io/TOP-Tic-Tac-Toe/',
+    repoLink: 'https://github.com/cjm97/TOP-Tic-Tac-Toe',
   },
 ];
 export default function Projects() {
@@ -65,9 +68,28 @@ export default function Projects() {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size='small' href={project.link} target='_blank'>
-                  View Project
-                </Button>
+                {project.liveLink === null ? (
+                  <Button size='small' href={project.repoLink} target='_blank'>
+                    View Project
+                  </Button>
+                ) : (
+                  <>
+                    <Button
+                      size='small'
+                      href={project.repoLink}
+                      target='_blank'
+                    >
+                      View Code
+                    </Button>
+                    <Button
+                      size='small'
+                      href={project.liveLink}
+                      target='_blank'
+                    >
+                      View Project
+                    </Button>
+                  </>
+                )}
               </CardActions>
             </Card>
           </Grid>
